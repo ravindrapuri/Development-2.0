@@ -10,8 +10,9 @@ html {
 
 body {
     font-family: Poppins, sans-serif;
-    background: #fffaf3;
-    color: #1e1a16
+    background: #f7f2e9;
+    color: #15120f;
+    overflow-x: hidden
 }
 
 a {
@@ -29,18 +30,18 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 18px 7%;
-    background: rgba(20, 17, 14, .9);
-    backdrop-filter: blur(10px)
+    background: rgba(14, 13, 12, .94);
+    backdrop-filter: blur(16px)
 }
 
 .logo {
     font-size: 28px;
-    font-weight: 700;
-    color: #d4af37
+    font-weight: 800;
+    color: #fff
 }
 
 .logo span {
-    color: #fff
+    color: #d4af37
 }
 
 .navbar {
@@ -50,7 +51,7 @@ a {
 
 .navbar a {
     color: #fff;
-    font-weight: 500
+    font-weight: 600
 }
 
 .navbar a:hover {
@@ -62,27 +63,20 @@ a {
     background: none;
     border: 0;
     color: #fff;
-    font-size: 24px
+    font-size: 25px
 }
 
 .hero {
-    height: 100vh;
-    background: url('https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+    min-height: 100vh;
+    background: linear-gradient(90deg, rgba(0, 0, 0, .84), rgba(0, 0, 0, .48)), url('https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
     position: relative;
     display: flex;
     align-items: center;
-    padding: 0 7%
-}
-
-.hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(90deg, rgba(0, 0, 0, .8), rgba(0, 0, 0, .35))
+    padding: 120px 7% 70px
 }
 
 .hero-content {
-    position: relative;
-    max-width: 720px;
+    max-width: 760px;
     color: #fff
 }
 
@@ -90,30 +84,31 @@ a {
 .section-sub {
     color: #d4af37;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 600;
-    margin-bottom: 12px
+    letter-spacing: 2.5px;
+    font-weight: 700;
+    margin-bottom: 14px
 }
 
 .hero h1,
 h2 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 64px;
+    font-size: 66px;
     line-height: 1.05
 }
 
 .hero-text {
     font-size: 18px;
-    margin: 22px 0;
-    max-width: 600px;
-    color: #eee
+    margin: 24px 0;
+    max-width: 620px;
+    color: #f1f1f1;
+    line-height: 1.7
 }
 
 .btn {
     display: inline-block;
     padding: 13px 28px;
     border-radius: 50px;
-    font-weight: 600;
+    font-weight: 700;
     transition: .3s
 }
 
@@ -139,7 +134,7 @@ h2 {
 
 .rating-box {
     margin-top: 25px;
-    background: rgba(255, 255, 255, .13);
+    background: rgba(255, 255, 255, .14);
     display: inline-block;
     padding: 12px 18px;
     border-radius: 12px;
@@ -155,19 +150,19 @@ h2 {
     grid-template-columns: repeat(4, 1fr);
     gap: 18px;
     padding: 35px 7%;
-    background: #111;
+    background: #0b0a09;
     color: #fff
 }
 
 .trust div {
     text-align: center;
-    padding: 22px;
+    padding: 24px;
     border: 1px solid rgba(212, 175, 55, .35);
-    border-radius: 16px
+    border-radius: 18px
 }
 
 .trust i {
-    font-size: 30px;
+    font-size: 31px;
     color: #d4af37;
     margin-bottom: 10px
 }
@@ -181,7 +176,7 @@ h2 {
 }
 
 .title {
-    font-size: 46px;
+    font-size: 48px;
     margin-bottom: 40px
 }
 
@@ -195,18 +190,18 @@ h2 {
 .about-img {
     height: 520px;
     border-radius: 28px;
-    background: url('https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=900&q=80') center/cover;
+    background: url('https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=900&q=80') center/cover;
     box-shadow: 0 20px 50px rgba(0, 0, 0, .18)
 }
 
 .about-text h2,
-.bridal h2,
+.premium-banner h2,
 .contact h2 {
     font-size: 48px
 }
 
 .about-text p,
-.bridal p {
+.premium-banner p {
     margin: 18px 0;
     color: #5d5147;
     line-height: 1.8
@@ -222,19 +217,25 @@ h2 {
     background: #fff;
     padding: 30px;
     border-radius: 20px;
-    box-shadow: 0 12px 35px rgba(0, 0, 0, .07);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, .08);
     transition: .3s;
-    border: 1px solid #f0e2c6
+    border: 1px solid #ead9ae;
+    overflow: hidden
 }
 
 .card:hover {
-    transform: translateY(-8px)
+    transform: translateY(-10px) scale(1.03)
 }
 
 .card i {
     font-size: 34px;
     color: #d4af37;
-    margin-bottom: 18px
+    margin-bottom: 18px;
+    transition: .3s
+}
+
+.card:hover i {
+    transform: rotate(10deg) scale(1.15)
 }
 
 .card h3 {
@@ -246,28 +247,17 @@ h2 {
     font-size: 14px
 }
 
-.bridal {
-    background: linear-gradient(rgba(0, 0, 0, .68), rgba(0, 0, 0, .68)), url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1600&q=80') center/cover fixed;
+.premium-banner {
+    background: linear-gradient(rgba(0, 0, 0, .72), rgba(0, 0, 0, .72)), url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=1600&q=80') center/cover fixed;
     color: #fff
 }
 
-.bridal div {
-    max-width: 650px
+.premium-banner div {
+    max-width: 660px
 }
 
-.bridal ul {
-    margin-top: 18px;
-    list-style: none
-}
-
-.bridal li {
-    margin: 12px 0
-}
-
-.bridal li:before {
-    content: '✓';
-    color: #d4af37;
-    margin-right: 10px
+.premium-banner p {
+    color: #eee
 }
 
 .gallery-grid {
@@ -278,9 +268,10 @@ h2 {
 
 .gallery-grid img {
     width: 100%;
-    height: 300px;
+    height: 310px;
     object-fit: cover;
-    border-radius: 20px
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .12)
 }
 
 .price-grid {
@@ -294,7 +285,7 @@ h2 {
     text-align: center;
     padding: 38px 25px;
     border-radius: 22px;
-    border: 1px solid #eee0c1;
+    border: 1px solid #ead9ae;
     box-shadow: 0 12px 35px rgba(0, 0, 0, .07)
 }
 
@@ -329,13 +320,14 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
-    background: #111;
+    background: #0b0a09;
     color: #fff
 }
 
 .contact p {
     margin: 14px 0;
-    color: #eee
+    color: #eee;
+    line-height: 1.7
 }
 
 .contact i {
@@ -374,6 +366,19 @@ h2 {
     resize: none
 }
 
+.floating-book {
+    position: fixed;
+    right: 22px;
+    bottom: 95px;
+    background: #d4af37;
+    color: #111;
+    padding: 12px 18px;
+    border-radius: 50px;
+    font-weight: 700;
+    z-index: 999;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .25)
+}
+
 .whatsapp {
     position: fixed;
     right: 22px;
@@ -393,13 +398,24 @@ h2 {
 footer {
     text-align: center;
     padding: 30px;
-    background: #080706;
+    background: #050403;
     color: #fff
 }
 
 footer h3 {
     color: #d4af37;
     margin-bottom: 8px
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(55px);
+    transition: 1s
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0)
 }
 
 @media(max-width:900px) {
@@ -427,12 +443,6 @@ footer h3 {
         font-size: 44px
     }
 
-    .hero {
-        height: auto;
-        min-height: 100vh;
-        padding-top: 90px
-    }
-
     .trust,
     .services-grid,
     .gallery-grid {
@@ -455,24 +465,52 @@ footer h3 {
 
 @media(max-width:560px) {
     .header {
-        padding: 15px 5%
+        padding: 16px 18px
+    }
+
+    .logo {
+        font-size: 22px
     }
 
     .hero {
-        padding: 100px 5% 60px
+        padding: 125px 18px 70px;
+        background-position: center;
+        min-height: 100vh
+    }
+
+    .tagline {
+        font-size: 12px;
+        line-height: 1.6;
+        letter-spacing: 1.5px
     }
 
     .hero h1 {
-        font-size: 38px
+        font-size: 35px;
+        line-height: 1.13
     }
 
     .hero-text {
-        font-size: 15px
+        font-size: 15px;
+        line-height: 1.6
+    }
+
+    .hero-buttons {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap
     }
 
     .secondary {
-        margin-left: 0;
-        margin-top: 12px
+        margin-left: 0
+    }
+
+    .btn {
+        padding: 11px 18px;
+        font-size: 14px
+    }
+
+    .rating-box {
+        font-size: 14px
     }
 
     .trust,
@@ -489,7 +527,7 @@ footer h3 {
 
     .title,
     .about-text h2,
-    .bridal h2,
+    .premium-banner h2,
     .contact h2 {
         font-size: 34px
     }
@@ -501,501 +539,12 @@ footer h3 {
     .gallery-grid img {
         height: 260px
     }
-}
-
-/* =========================
-   HERO VIDEO
-========================= */
-
-.hero {
-    position: relative;
-    overflow: hidden;
-}
-
-.hero-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -2;
-}
-
-.hero-overlay {
-    z-index: -1;
-}
-
-/* =========================
-   CUSTOM CURSOR
-========================= */
-
-.cursor {
-    width: 18px;
-    height: 18px;
-    border: 2px solid #d4af37;
-    border-radius: 50%;
-    position: fixed;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    z-index: 9999;
-    transition: .08s linear;
-}
-
-/* =========================
-   OFFER POPUP
-========================= */
-
-.offer-popup {
-    position: fixed;
-    right: 25px;
-    top: 100px;
-    width: 320px;
-    background: #fff;
-    padding: 25px;
-    border-radius: 20px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, .2);
-    z-index: 9999;
-    display: none;
-}
-
-.offer-popup.show {
-    display: block;
-    animation: popup .5s ease;
-}
-
-@keyframes popup {
-    from {
-        opacity: 0;
-        transform: translateY(-30px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.close-popup {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    border: none;
-    background: none;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-/* =========================
-   SCROLL REVEAL
-========================= */
-
-.reveal {
-    opacity: 0;
-    transform: translateY(60px);
-    transition: 1s;
-}
-
-.reveal.active {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* =========================
-   SERVICE CARD PREMIUM
-========================= */
-
-.card {
-    overflow: hidden;
-}
-
-.card:hover {
-    transform: translateY(-10px) scale(1.03);
-}
-
-.card:hover i {
-    transform: rotate(10deg) scale(1.2);
-}
-
-.card i {
-    transition: .4s;
-}
-
-/* =========================
-   BEFORE AFTER SLIDER
-========================= */
-
-.compare-box {
-    position: relative;
-    max-width: 900px;
-    margin: auto;
-    overflow: hidden;
-    border-radius: 20px;
-}
-
-.compare-box img {
-    width: 100%;
-    display: block;
-}
-
-.after-wrap {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    overflow: hidden;
-    height: 100%;
-}
-
-#compareRange {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 70%;
-}
-
-.before-label,
-.after-label {
-    position: absolute;
-    top: 20px;
-    background: #111;
-    color: #fff;
-    padding: 8px 15px;
-    border-radius: 30px;
-}
-
-.before-label {
-    left: 20px;
-}
-
-.after-label {
-    right: 20px;
-}
-
-/* =========================
-   PACKAGE CALCULATOR
-========================= */
-
-.calc-box {
-    max-width: 700px;
-    margin: auto;
-    background: #fff;
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
-}
-
-.calc-box label {
-    display: block;
-    margin: 15px 0;
-    font-size: 18px;
-}
-
-.calc-box h3 {
-    margin-top: 25px;
-    color: #d4af37;
-    font-size: 32px;
-}
-
-/* =========================
-   TESTIMONIAL
-========================= */
-
-.testimonial-slider {
-    max-width: 700px;
-    margin: auto;
-    position: relative;
-}
-
-.testimonial {
-    display: none;
-    background: #fff;
-    padding: 40px;
-    border-radius: 20px;
-    text-align: center;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
-}
-
-.testimonial.active {
-    display: block;
-}
-
-.testimonial h3 {
-    color: #d4af37;
-    margin-bottom: 15px;
-}
-
-/* =========================
-   INSTAGRAM
-========================= */
-
-.reel-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.reel-card {
-    background: #fff;
-    padding: 40px;
-    text-align: center;
-    border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
-}
-
-.reel-card i {
-    font-size: 45px;
-    color: #d62976;
-    margin-bottom: 15px;
-}
-
-/* =========================
-   BEAUTY ASSISTANT
-========================= */
-
-.assistant-box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-}
-
-.assistant-box button {
-    padding: 15px 25px;
-    border: none;
-    background: #111;
-    color: #fff;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: .3s;
-}
-
-.assistant-box button:hover {
-    background: #d4af37;
-    color: #111;
-}
-
-/* =========================
-   FLOATING BOOK BUTTON
-========================= */
-
-.floating-book {
-    position: fixed;
-    bottom: 95px;
-    right: 22px;
-    background: #d4af37;
-    color: #111;
-    padding: 12px 18px;
-    border-radius: 50px;
-    font-weight: 600;
-    z-index: 999;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, .2);
-}
-
-/* =========================
-   MOBILE
-========================= */
-
-@media(max-width:768px) {
-
-    .reel-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .offer-popup {
-        width: 90%;
-        right: 5%;
-    }
-
-    .floating-book {
-        font-size: 14px;
-        padding: 10px 15px;
-    }
-
-}
-
-@media(max-width:560px) {
-
-    body {
-        overflow-x: hidden;
-    }
-
-    .header {
-        width: 100%;
-        padding: 18px 22px;
-    }
-
-    .hero {
-        min-height: 100vh;
-        width: 100%;
-        padding: 170px 22px 70px;
-        background-position: center;
-    }
-
-    .hero-content {
-        max-width: 100%;
-        width: 100%;
-    }
-
-    .tagline {
-        font-size: 13px;
-        line-height: 1.6;
-        letter-spacing: 2px;
-    }
-
-    .hero h1 {
-        font-size: 34px;
-        line-height: 1.15;
-        max-width: 100%;
-        word-break: normal;
-    }
-
-    .hero-text {
-        font-size: 15px;
-        line-height: 1.6;
-        max-width: 100%;
-    }
-
-    .hero-buttons {
-        display: flex;
-        gap: 12px;
-        flex-wrap: wrap;
-    }
-
-    .btn {
-        padding: 12px 20px;
-        font-size: 14px;
-    }
-
-    .secondary {
-        margin-left: 0;
-    }
-
-    .rating-box {
-        width: 100%;
-        max-width: 260px;
-        font-size: 14px;
-    }
-
-    .offer-popup {
-        top: 115px;
-        left: 22px;
-        right: 22px;
-        width: auto;
-    }
-
-    .floating-book {
-        right: 18px;
-        bottom: 85px;
-        font-size: 13px;
-    }
-
-    .whatsapp {
-        width: 52px;
-        height: 52px;
-        right: 20px;
-        bottom: 20px;
-    }
-}
-
-/* ===== FINAL MOBILE FIX ===== */
-@media (max-width: 560px) {
-
-    html,
-    body {
-        width: 100%;
-        max-width: 100%;
-        overflow-x: hidden;
-    }
-
-    .header {
-        left: 0;
-        right: 0;
-        width: 100%;
-        padding: 16px 18px;
-    }
-
-    .logo {
-        font-size: 24px;
-        white-space: nowrap;
-    }
-
-    .hero {
-        width: 100%;
-        min-height: 100vh;
-        padding: 210px 18px 70px;
-        background-position: center;
-        overflow: hidden;
-    }
-
-    .hero-content {
-        width: 100%;
-        max-width: 100%;
-        overflow: hidden;
-    }
-
-    .tagline {
-        font-size: 12px;
-        letter-spacing: 1.6px;
-        line-height: 1.5;
-        max-width: 100%;
-        word-break: break-word;
-    }
-
-    .hero h1 {
-        font-size: 31px;
-        line-height: 1.15;
-        max-width: 100%;
-        word-break: break-word;
-    }
-
-    .hero-text {
-        font-size: 14px;
-        line-height: 1.55;
-        max-width: 100%;
-    }
-
-    .hero-buttons {
-        display: flex;
-        gap: 10px;
-        flex-wrap: wrap;
-        width: 100%;
-    }
-
-    .btn {
-        padding: 11px 18px;
-        font-size: 14px;
-    }
-
-    .secondary {
-        margin-left: 0;
-    }
-
-    .rating-box {
-        max-width: 100%;
-        width: auto;
-        font-size: 14px;
-    }
-
-    .offer-popup {
-        top: 120px;
-        left: 18px;
-        right: 18px;
-        width: auto;
-        max-width: calc(100% - 36px);
-        padding: 22px;
-    }
-
-    .offer-popup .btn {
-        padding: 10px 18px;
-    }
 
     .floating-book {
         right: 16px;
         bottom: 84px;
         font-size: 12px;
-        padding: 10px 14px;
+        padding: 10px 14px
     }
 
     .whatsapp {
@@ -1003,27 +552,31 @@ footer h3 {
         bottom: 18px;
         width: 50px;
         height: 50px;
-        font-size: 26px;
+        font-size: 26px
     }
 }
+
+/* =========================
+   PREMIUM LOGO
+========================= */
 
 .premium-logo {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
 }
 
 .logo-icon {
-    width: 42px;
-    height: 42px;
+    width: 46px;
+    height: 46px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #d4af37, #fff1a8, #b88918);
-    color: #111;
+    background: linear-gradient(135deg, #d4af37, #f9e27d);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 20px;
-    box-shadow: 0 0 18px rgba(212, 175, 55, .45);
+    color: #111;
+    font-size: 18px;
+    box-shadow: 0 0 20px rgba(212, 175, 55, .45);
 }
 
 .logo-text {
@@ -1033,32 +586,216 @@ footer h3 {
 }
 
 .logo-text strong {
-    font-size: 26px;
-    color: #d4af37;
-    letter-spacing: 1px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
 }
 
 .logo-text small {
-    font-size: 12px;
-    color: #fff;
+    font-size: 10px;
     letter-spacing: 1.5px;
     text-transform: uppercase;
-    margin-top: 5px;
+    color: #d4af37;
+    margin-top: 4px;
 }
 
+/* =========================
+   PREMIUM HEADER
+========================= */
+
+.header {
+    background: rgba(8, 8, 8, .75);
+    backdrop-filter: blur(18px);
+    border-bottom: 1px solid rgba(212, 175, 55, .15);
+}
+
+/* =========================
+   PREMIUM HERO
+========================= */
+
+.hero {
+    background:
+        linear-gradient(rgba(0, 0, 0, .78),
+            rgba(0, 0, 0, .58)),
+        url("https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1800&q=80");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    font-size: 72px;
+    color: #fff;
+    text-shadow: 0 8px 30px rgba(0, 0, 0, .5);
+}
+
+.hero-text {
+    font-size: 19px;
+    color: #f2f2f2;
+}
+
+.hero-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.hero-badges span {
+    padding: 10px 18px;
+    border-radius: 40px;
+    background: rgba(255, 255, 255, .1);
+    border: 1px solid rgba(255, 255, 255, .15);
+    color: #fff;
+    font-size: 14px;
+}
+
+/* =========================
+   TRUST SECTION
+========================= */
+
+.trust div {
+    transition: .4s;
+    background: #111;
+}
+
+.trust div:hover {
+    transform: translateY(-10px);
+    border-color: #d4af37;
+    box-shadow: 0 15px 35px rgba(212, 175, 55, .15);
+}
+
+/* =========================
+   SERVICE CARDS
+========================= */
+
+.card {
+    transition: .4s;
+}
+
+.card:hover {
+    transform: translateY(-12px) scale(1.04);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, .15);
+}
+
+.card:hover i {
+    transform: rotate(8deg) scale(1.2);
+}
+
+/* =========================
+   GALLERY PREMIUM
+========================= */
+
+.gallery-grid img {
+    transition: .5s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.06);
+}
+
+/* =========================
+   PREMIUM BANNER
+========================= */
+
+.premium-banner {
+    background:
+        linear-gradient(rgba(0, 0, 0, .75),
+            rgba(0, 0, 0, .75)),
+        url("https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=1800&q=80");
+    background-size: cover;
+    background-position: center;
+}
+
+/* =========================
+   PRICING
+========================= */
+
+.price-tag {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 30px;
+    background: #d4af37;
+    color: #111;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.price-card {
+    transition: .4s;
+}
+
+.price-card:hover {
+    transform: translateY(-10px);
+}
+
+/* =========================
+   TESTIMONIALS
+========================= */
+
+.testimonial {
+    background: #fff;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .08);
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+}
+
+.testimonial h3 {
+    color: #d4af37;
+    margin-bottom: 15px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #050505;
+    border-top: 1px solid rgba(212, 175, 55, .15);
+}
+
+footer h3 {
+    font-size: 26px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
 @media(max-width:560px) {
+
+    .hero {
+        padding: 140px 20px 80px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+        line-height: 1.1;
+    }
+
+    .hero-badges {
+        gap: 8px;
+    }
+
+    .hero-badges span {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
     .logo-icon {
-        width: 36px;
-        height: 36px;
-        font-size: 17px;
+        width: 38px;
+        height: 38px;
     }
 
     .logo-text strong {
-        font-size: 22px;
+        font-size: 16px;
     }
 
     .logo-text small {
-        font-size: 9px;
-        letter-spacing: 1px;
+        font-size: 8px;
     }
+
 }
